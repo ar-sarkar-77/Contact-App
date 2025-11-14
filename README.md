@@ -61,7 +61,16 @@ This app allows users to **add**, **view**, **edit**, **delete**, and **search c
 ## 🔧 How to Clone and Run
 
 1. Open your terminal or command prompt. 
-2. Clone the repository:
+2. Clone this repository:
+   ```bash
+   git clone https://github.com/ar-sarkar-77/Contact-App.git  
+---
+## 👨‍💻 Author
+---
 
-```bash
-git clone https://github.com/ar-sarkar-77/contact-manager-app.git
+## 👤 Mohammad Anondo Sarkar  
+💼 Android App Developer | UI UX Designer | 💻 Computer Science Student  
+📧 Email: anondosarkarar77@gmail.com  
+🌍 From: Lalmonirhat, Bangladesh  
+🌐 Website: https://arsarkar77.blogspot.com  
+💬 Built with ❤️, powered by Kotlin, and fueled by late-night coding ☕💡  
