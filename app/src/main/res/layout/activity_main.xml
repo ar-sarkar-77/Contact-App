@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:fitsSystemWindows="true"
     >
 
     <EditText
@@ -29,6 +29,8 @@
             android:id="@+id/listView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             />
 
        <ImageView

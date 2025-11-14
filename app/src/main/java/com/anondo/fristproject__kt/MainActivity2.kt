@@ -18,10 +18,23 @@ class MainActivity2 : AppCompatActivity() {
 
             val dba = DataBaseOpenHelper(this)
 
-            var name : String = (edtNam.text.toString())
-            var num : String = edtNum.text.toString()
+            var name : String = (edtNam.text.toString()).trim()
+            var number : String = edtNum.text.toString().trim()
 
-            var number :String = num
+            if (number.isEmpty()) {
+                edtNum.error = "Number cannot be empty"
+                return@setOnClickListener
+            }
+
+            if (name.isEmpty()) {
+                edtNum.error = "Number cannot be empty"
+                return@setOnClickListener
+            }
+
+            if (number.startsWith("0")) {
+                edtNum.error = "Number cannot start with 0"
+                return@setOnClickListener
+            }
 
             dba.getContact(name, number)
 

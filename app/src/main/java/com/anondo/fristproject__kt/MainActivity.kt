@@ -127,12 +127,12 @@ class MainActivity : AppCompatActivity() {
             var numberr : String = dataCon.mobile
 
             title.text = namee
-            number.text = numberr
+            number.text = "0"+numberr
 
             con_lay.setOnClickListener{
                 editor.putString("id", dataCon.id )
                 editor.putString("name", dataCon.name)
-                editor.putString("number", dataCon.mobile)
+                editor.putString("number", "0"+dataCon.mobile)
 
                 editor.apply()
 

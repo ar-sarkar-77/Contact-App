@@ -35,7 +35,7 @@ class MainActivity3 : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
 
         val id = sharedPreferences.getString("id","defaultId")
-        val name = sharedPreferences.getString("name", "defaultUser")
+        val name = sharedPreferences.getString("name", "")
         val number = sharedPreferences.getString("number", "")
 
         names.text = name
@@ -56,7 +56,11 @@ class MainActivity3 : AppCompatActivity() {
 
         edit_Ig.setOnClickListener{
 
-            startActivity(Intent(this,MainActivity4::class.java))
+            var editintent = Intent(this,MainActivity4::class.java)
+            editintent.putExtra("namess" , name)
+            editintent.putExtra("numberss" , number)
+            editintent.putExtra("idss" , id)
+            startActivity(editintent)
 
         }
 

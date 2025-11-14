@@ -20,7 +20,18 @@ class MainActivity4 : AppCompatActivity() {
 
         val sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
 
-        val id = sharedPreferences.getString("id","defaultId")
+
+
+        val id = intent.getStringExtra("idss")
+        val name = intent.getStringExtra("namess")
+        val numberr = intent.getStringExtra("numberss")
+
+        edtNam.setText(name)
+        if (numberr!!.startsWith("0")) {
+            edtNum.setText(numberr!!.substring(1))
+        } else {
+            edtNum.setText(numberr)
+        }
 
         btn.setOnClickListener{
 
