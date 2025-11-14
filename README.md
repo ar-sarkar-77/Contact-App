@@ -27,7 +27,7 @@ This app allows users to **add**, **view**, **edit**, **delete**, and **search c
 | Database        | SQLite (Local Storage)            |
 | UI              | LinearLayout, ListView, CardView  |
 | Architecture    | Simple Activity-based             |
-| Android Version | API 21+ (Android 5.0 and above)   |
+| Android Version | API 24+ (Android 7.0 and above)   |
 
 ---
 
